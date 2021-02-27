@@ -104,7 +104,7 @@ function myFunction() {
   }
   addinput(); comment out due to prompt annoyance*/
 
-  //Class Activity
+/*Class Activity
 function calculator() {
     var n1 = parseInt(prompt("Please enter number 1"));
     var operator = prompt("Please enter the operation method");
@@ -121,6 +121,14 @@ function calculator() {
     } else {
         var result = "Please enter a valid operator";
     }
-    console.log(result);
+    console.log(result); 
 }
-calculator();
+calculator(); commented due to annoying prompt*/
+
+//Math
+var math = Math.floor(Math.random() * 10); //random() creates a random int from 0 to 0.99. Therefore, if you want to generate to a certain max number using floor, including it, then need to add one to max number
+console.log(math); //This will only generate random from 1-9. This is a more fair way to generate random numbers.
+
+var math2 = Math.ceil(Math.random() * 10); // This can generate 1 - 10 as ceil is used but you will almost not find 0 or 1 as your answer. As such, probability chances are not equal.
+console.log(math2);
+
