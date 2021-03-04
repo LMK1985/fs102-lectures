@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5</title>
+</head>
+<body>
+    <h1>Lessson 5</h1>
+    <p id ="demo"></p>
+    <p id ="intro">Hello!</p>
+    <p id ="object"></p>
+
+    <script> // DOM related interations between HTML & JS
+        document.getElementById("demo").innerHTML = "Hello World!"; // All these codes as much as possible best to put in JS file as loading too much on HTML will slow it and affect SEO
+        document.getElementById("object").innerHTML =  document.write(Date());
+        var myElement = document.getElementById("intro"); // Get element via ID and store it as a variable for use later in JS.
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
