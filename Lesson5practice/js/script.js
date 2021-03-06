@@ -45,6 +45,14 @@ function changemode() {
 var user = {
     firstname: "John",
     lastname: "Doe",
-    age: 25,
-    fullname: () => this.firstname + " " + this.lastname
+   // age: 25,
+    //fullname: () => this.firstname + " " + this.lastname
 };
+
+var text;
+
+for (x in user) {
+    text = (text += " " += user[x]);
+}
+console.log(text);
+
