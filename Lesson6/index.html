@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6</title>
+</head>
+<body>
+    <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+    <div class = "birdy">
+
+    <p>Click to modify new para below</p>
+    <button id="btn1">Modify New Para</button>
+
+    <h2>Toggle</h2>
+
+    <p id="toggle">Click to toggle my visibility!</p>
+    <button id="btn2">Toggle here!</button>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script>
+            $("#btn2").first().click(function() {
+            $("#toggle").first().fadeToggle("slow", "linear");
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
